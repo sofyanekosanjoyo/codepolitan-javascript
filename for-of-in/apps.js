@@ -49,3 +49,23 @@ for (let nilai of daftarNilai) {
 }
 
 console.log(`Nilai Rata-rata = ${total / daftarNilai.length}`);
+
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+angka.forEach(function (elemen) {
+  if (elemen % 2 === 0) {
+    console.log(elemen);
+  }
+});
+
+const animes = [
+  { title: "Attack on Titan", rating: 90 },
+  { title: "One Piece", rating: 89 },
+  { title: "Bleach", rating: 88 },
+  { title: "Hunter x Hunter", rating: 87 },
+  { title: "Naruto", rating: 86 },
+];
+
+animes.forEach(function (anime) {
+  console.log(`${anime.title} - ${anime.rating}/100`);
+});
