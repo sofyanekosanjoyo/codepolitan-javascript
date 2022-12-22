@@ -19,3 +19,20 @@ const random = () => {
 };
 
 console.log(random());
+
+// Return secara implisit dari arrow funtion
+const add = (a, b) => a + b;
+
+// Settimeout
+console.log("Halo...");
+setTimeout(() => {
+  console.log("Masih disana gak???");
+}, 3000);
+console.log("Saya pergi ya...");
+
+// Settimeout dan Setinterval
+const interval = setInterval(() => {
+  console.log(Math.random() * 1000);
+}, 1000);
+
+//clearInterval(interval);
