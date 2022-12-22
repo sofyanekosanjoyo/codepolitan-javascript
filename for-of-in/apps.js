@@ -50,6 +50,8 @@ for (let nilai of daftarNilai) {
 
 console.log(`Nilai Rata-rata = ${total / daftarNilai.length}`);
 
+// Forech Method
+
 const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 angka.forEach(function (elemen) {
@@ -68,4 +70,13 @@ const animes = [
 
 animes.forEach(function (anime) {
   console.log(`${anime.title} - ${anime.rating}/100`);
+});
+
+// Map
+const angkaKuadrat = angka.map(function (num) {
+  return num * num;
+});
+
+const animeList = animes.map(function (anime) {
+  return anime.title.toUpperCase();
 });
