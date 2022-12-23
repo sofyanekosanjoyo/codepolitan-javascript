@@ -47,7 +47,7 @@ console.log(angkaGanjil);
 
 const animes = [
   { title: "Attack on Titan", rating: 84, year: 2013 },
-  { title: "One Piece", rating: 89, year: 1999 },
+  { title: "One Piece", rating: 85, year: 1999 },
   { title: "Bleach", rating: 83, year: 2004 },
   { title: "Hunter x Hunter", rating: 87, year: 2011 },
   { title: "Naruto", rating: 86, year: 2002 },
@@ -83,4 +83,27 @@ namaOrang.some((nama) => {
 namaOrang.every((nama) => {
   // return nama.length === 4;
   console.log(nama.length === 4);
+});
+
+// Method Reduce
+let total = 0;
+for (let skor of daftarNilai) {
+  total += skor;
+}
+console.log(total);
+
+const totalReduce = daftarNilai.reduce((totalReduce, skorReduce) => {
+  return totalReduce + skorReduce;
+});
+
+console.log(totalReduce);
+
+const bestAnime = animes.reduce((bestAnime, currentAnime) => {
+  console.log(currentAnime.title);
+  console.log(bestAnime.title);
+
+  if (currentAnime.rating > bestAnime.rating) {
+    return currentAnime;
+  }
+  return bestAnime;
 });
