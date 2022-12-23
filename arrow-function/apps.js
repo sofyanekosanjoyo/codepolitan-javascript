@@ -67,3 +67,20 @@ const judulAnimeBagus = animes
   .map((anime) => anime.title);
 
 console.log(judulAnimeBagus);
+
+// Method Every dan some
+const daftarNilai = [80, 85, 79, 90, 93, 77];
+const statusLulus = daftarNilai.every((nilai) => nilai >= 75);
+console.log(statusLulus);
+
+const namaOrang = ["ayu", "bela", "caca", "dea", "eci", "fara"];
+
+namaOrang.some((nama) => {
+  // return nama.length === 4;
+  console.log(nama.length === 4);
+});
+
+namaOrang.every((nama) => {
+  // return nama.length === 4;
+  console.log(nama.length === 4);
+});
